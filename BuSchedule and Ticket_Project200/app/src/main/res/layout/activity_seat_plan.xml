@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bdbusinfo.bdbusinfo.seatplan.SeatPlan"
+    android:background="#2c0208"
+    android:id="@+id/activityseatplan">
+
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#d5382f"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/seatlist"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginTop="10dp"
+>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seatlistview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/eacheview" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="route"
+        android:id="@+id/routeTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="bus"
+        android:id="@+id/busTextView"
+        android:layout_below="@+id/routeTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="price"
+        android:id="@+id/priceTextView"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/timeseatplan"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="70dp"
+        android:id="@+id/nexttoconfirm"
+        android:layout_above="@+id/seatlist"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/book"
+        android:textColor="#fbfffd"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chnge\nDate"
+        android:id="@+id/changedate"
+        android:layout_alignTop="@+id/nexttoconfirm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/nexttoconfirm"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="time"
+        android:id="@+id/timeseatplan"
+        android:layout_below="@+id/busTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

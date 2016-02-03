@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="@drawable/size4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="time"
+        android:id="@+id/timeseatplan"
+        android:textSize="20dp"
+        android:fontFamily="ComicSanMS"
+        android:textColor="#fef8ffc2"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="type"
+        android:id="@+id/type"
+        android:textSize="17dp"
+        android:textColor="#d2c2bab8"
+        android:layout_below="@+id/timeseatplan"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

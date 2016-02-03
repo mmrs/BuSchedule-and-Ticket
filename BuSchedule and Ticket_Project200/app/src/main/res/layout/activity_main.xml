@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/nnn"
+    android:id="@+id/mainwindow"
+    android:clickable="false">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonroutes"
+        android:textColor="#ff14257a"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@+id/buttonabout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/routes1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonabout"
+        android:textColor="#ffa3a509"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/about1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonexit"
+        android:layout_marginTop="0dp"
+        android:textColor="#ff91100f"
+        android:layout_below="@+id/buttonabout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/exit1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V 1.2"
+        android:id="@+id/versiontag"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

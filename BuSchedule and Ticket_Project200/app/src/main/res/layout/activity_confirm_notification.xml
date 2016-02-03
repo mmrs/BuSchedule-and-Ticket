@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="bdbusinfo.bdbusinfo.confirmnotification.ConfirmNotification"
+    android:background="@drawable/aboutus"
+    android:id="@+id/cnid">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Ticket Confirmation!!  "
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/red"
+            android:textColor="#fffefd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NAME"
+            android:id="@+id/namecn"
+            android:textColor="#010100"
+            android:layout_below="@+id/timecn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ADDRESS"
+            android:id="@+id/addresscn"
+            android:textColor="#010100"
+            android:layout_below="@+id/mobilecn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MOBILE"
+            android:id="@+id/mobilecn"
+            android:textColor="#000100"
+            android:layout_below="@+id/namecn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SEAT no"
+            android:id="@+id/seatnocn"
+            android:textColor="#000100"
+            android:layout_below="@+id/addresscn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BIll"
+            android:id="@+id/billcn"
+            android:textColor="#010100"
+            android:layout_below="@+id/seatnocn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="from"
+            android:id="@+id/fromcn"
+            android:textColor="#010100"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="65dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="to"
+            android:id="@+id/tocn"
+            android:textColor="#010100"
+            android:layout_below="@+id/fromcn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="bus"
+            android:id="@+id/buscn"
+            android:layout_below="@+id/tocn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="time"
+            android:id="@+id/timecn"
+            android:textColor="#010100"
+            android:layout_below="@+id/dateview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="type"
+            android:id="@+id/typecn"
+            android:textColor="#000100"
+            android:layout_below="@+id/buscn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="date"
+            android:id="@+id/dateview"
+            android:textColor="#010100"
+            android:layout_below="@+id/typecn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonsavecn"
+            android:background="@drawable/capture"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4" />
+
+
+</RelativeLayout>

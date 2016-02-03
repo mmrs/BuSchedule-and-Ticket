@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bdbusinfo.bdbusinfo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".seatplan.SeatPlan"
+            android:label="@string/title_activity_seat_plan" >
+        </activity>
+        <activity
+            android:name=".about.AboutActivity"
+            android:label="About Us" >
+        </activity>
+        <activity
+            android:name=".routelist.RouteListActivity"
+            android:label="RouteList" />
+        <activity
+            android:name=".transportlist.TransportList"
+            android:label="TrasportList" />
+        <activity
+            android:name=".time.TimeActivity"
+            android:label="Schedule" />
+        <activity
+            android:name=".confirmticket.ConfirmTicket"
+            android:label="ConfirmBooking" />
+        <activity
+            android:name=".confirmnotification.ConfirmNotification"
+            android:label="@string/title_activity_confirm_notification" >
+        </activity>
+        <activity
+            android:name=".pickdate.PickDate"
+            android:label="@string/title_activity_pickdate" >
+        </activity>
+    </application>
+
+</manifest>

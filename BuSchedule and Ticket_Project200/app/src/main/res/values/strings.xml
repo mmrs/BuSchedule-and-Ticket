@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BuSchedule and Ticket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_seat_plan">SeatPlan</string>
+    <string name="title_activity_confirmbooking">confirmbooking</string>
+    <string name="title_activity_confirm_notification">ConfirmNotification</string>
+    <string name ="server_link">http://192.168.137.1:8081/BuScheduleandTicket/Server?</string>
+    <string name="title_activity_pickdate">pickdate</string>
+</resources>
